@@ -1,0 +1,25 @@
+.main-title {
+	&__head {
+		width: 258px;
+		margin-top: 15px;
+		font-weight: bold;
+		font-size: 18px;
+		text-transform: uppercase;
+		@media (min-width: $screen-xl) {
+			display: none;
+		}
+
+		}
+	&__description {
+		width: 272px;
+		font-size: 14px;
+		@media (min-width: $screen-xl) {
+			display: none;
+		}
+	}
+	&__inner {
+		width: 330px;
+		margin: 0 auto;
+		@media (min-width:$screen-xl) {	width: 1620px;}
+	}
+}

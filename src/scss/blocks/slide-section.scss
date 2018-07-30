@@ -1,0 +1,30 @@
+.slide-section {
+	margin-top: 67px;
+	font-family: $font-family-second;	
+	&__title {
+	padding: 40px 0 40px 0;
+	font-size: 20px;
+	}
+	
+	&__inner {
+		width: 330px;
+		margin: auto;
+		padding-bottom: 45px;
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text {
+		font-family: $font-family-third;
+		text-align: right;
+	}
+	&__rtxt {
+		display: block;
+		text-transform: uppercase;
+		&--bold {
+			font-weight: bold;
+		}
+	}
+
+}

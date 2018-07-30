@@ -1,0 +1,6 @@
+.header-title {
+	display: none;
+	@media (min-width:$screen-xl) {
+		display: flex;
+	}
+}
