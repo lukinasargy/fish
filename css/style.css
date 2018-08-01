@@ -148,7 +148,7 @@ h1 {
     left: -43px;
     right: auto; }
   [dir="rtl"] .slick-next:before {
-    content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-09776722647611591.png", "left-sm"; }
+    content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-09682596946552744.png", "left-sm"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -479,8 +479,10 @@ h1 {
   margin: auto; }
 
 .footer__img {
+  width: 327px;
   height: 205px;
-  background-image: url("../img/footer-fish.jpg"); }
+  background-image: url("../img/footer-fish.jpg");
+  background-size: 100%; }
 
 .menu {
   padding: 10px 15px;
@@ -624,18 +626,20 @@ h2 {
     font-size: 16px; } }
 
 @media (min-width: 1920px){
+  .slick-prev{
+    left: -100px; }
   [dir="rtl"] .slick-prev{
     left: auto;
     right: 0px; }
   [dir="rtl"] .slick-prev:before{
-    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-09776722647611591.png", "right"; }
+    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-09682596946552744.png", "right"; }
   .slick-next{
-    right: -70px; }
+    right: -100px; }
   [dir="rtl"] .slick-next{
     left: -70px;
     right: auto; }
   [dir="rtl"] .slick-next:before{
-    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-09776722647611591.png", "left"; }
+    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-09682596946552744.png", "left"; }
   .slick-dots{
     left: -130px; }
   .slick-dots li{
@@ -695,6 +699,11 @@ h2 {
   .slide-section__inner{
     width: 1620px;
     margin-top: 147px; }
+  .footer__inner{
+    width: 917px; }
+  .footer__img{
+    width: 917px;
+    height: 548px; }
   .menu{
     box-shadow: none; }
   .menu__title{
