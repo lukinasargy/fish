@@ -3,4 +3,17 @@
 	@media (min-width:$screen-xl) {
 		display: flex;
 	}
+	&__head {
+		width: 528px;
+		height: 119px;
+		margin-left: 62px;
+		font-size: 36px;
+		font-weight: bold;
+	}
+	&__description {
+		width: 462px;
+		height: 64px;
+		margin-left: 238px;
+		font-size: 18px;
+	}
 }

@@ -71,7 +71,7 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 65%;
+    top: 50%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -105,7 +105,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-prev {
     z-index: 2;
-    left:-40px;
+    left:-20px;
     transform: rotate(-45deg);
     [dir="rtl"] & {
         left: auto;
@@ -135,7 +135,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-next {
     // @include sprite($right-sm);
-    right: -43px;
+    right: -20px;
     [dir="rtl"] & {
         left: -43px;
         right: auto;

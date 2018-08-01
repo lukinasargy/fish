@@ -1,15 +1,20 @@
 .slide-section {
-	margin-top: 67px;
 	font-family: $font-family-second;	
 	&__title {
 	padding: 40px 0 40px 0;
 	font-size: 20px;
 	}
-	
+	@media (min-width: $screen-xl) {
+		margin-top: 0;
+	}
 	&__inner {
 		width: 330px;
 		margin: auto;
 		padding-bottom: 45px;
+		@media (min-width:$screen-xl) {
+			width: 1620px;
+			margin-top: 147px;
+		}
 	}
 	&__bottom {
 		display: flex;

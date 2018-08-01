@@ -3,6 +3,7 @@ $(document).ready(function(){
 	  mobileFirst: true,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
+	  centerMode: true,
 	  swipeToSlide: true,
 	  variableWidth:true,
 	  arrows: true,
@@ -10,11 +11,13 @@ $(document).ready(function(){
 	  infinite: true,
 	  responsive: [
 	    {
-	      breakpoint: 1920,
+	      breakpoint: 1910,
 	      settings: {
+	      	centerMode: false,
 	      	slidesToShow: 3,
 	  		slidesToScroll: 1,
-	  		dots:true,
+	  		scrollbar:true,
+	  		arrows:false,
 	      }
 	    }
 	  ]
