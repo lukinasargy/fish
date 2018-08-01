@@ -3,10 +3,17 @@
 			width: 327px;			
 			padding: 60px 0 75px 0;
 			margin:auto;
+			@media (min-width: $screen-xl) {width: 917px;}
 		}
 	&__img {
+		width: 327px;
 		height: 205px;
 		background-image: url("../img/footer-fish.jpg");
+		background-size: 100%;
+		@media (min-width: $screen-xl) {
+				width: 917px;
+				height: 548px;
+			}
 		}
 
 	// @media (min-width: $screen-lg) {
