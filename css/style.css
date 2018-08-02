@@ -148,7 +148,7 @@ h1 {
     left: -43px;
     right: auto; }
   [dir="rtl"] .slick-next:before {
-    content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-09682596946552744.png", "left-sm"; }
+    content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-07914038266932264.png", "left-sm"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -299,8 +299,8 @@ h1 {
       background-size: 100%;
       height: 36px;
       width: 48px;
-      bottom: 15px;
-      right: 15px; }
+      bottom: 5px;
+      right: 5px; }
     .slider__item:before {
       content: '1';
       font-family: "Segoe UI", sans-serif;
@@ -315,15 +315,21 @@ h1 {
     .slider__item--second:before {
       content: '2'; }
     .slider__item--second:after {
-      background-image: url("../img/fish2.svg"); }
+      background-image: url("../img/fish2.svg");
+      height: 66px;
+      width: 66px; }
     .slider__item--third:before {
       content: '3'; }
     .slider__item--third:after {
-      background-image: url("../img/fish3.svg"); }
+      background-image: url("../img/fish3.svg");
+      width: 69px;
+      height: 59px; }
     .slider__item--fourth:before {
       content: '4'; }
     .slider__item--fourth:after {
-      background-image: url("../img/fish3.svg"); }
+      background-image: url("../img/fish3.svg");
+      width: 69px;
+      height: 59px; }
 
 .price-tabs__list {
   display: none; }
@@ -632,14 +638,14 @@ h2 {
     left: auto;
     right: 0px; }
   [dir="rtl"] .slick-prev:before{
-    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-09682596946552744.png", "right"; }
+    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-07914038266932264.png", "right"; }
   .slick-next{
     right: -100px; }
   [dir="rtl"] .slick-next{
     left: -70px;
     right: auto; }
   [dir="rtl"] .slick-next:before{
-    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-09682596946552744.png", "left"; }
+    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-07914038266932264.png", "left"; }
   .slick-dots{
     left: -130px; }
   .slick-dots li{
