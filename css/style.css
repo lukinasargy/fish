@@ -147,8 +147,6 @@ h1 {
   [dir="rtl"] .slick-next {
     left: -43px;
     right: auto; }
-  [dir="rtl"] .slick-next:before {
-    content: 108px, 136px, -108px, -136px, 34px, 38px, 200px, 192px, "../img/sprite-07914038266932264.png", "left-sm"; }
 
 /* Dots */
 .slick-dotted.slick-slider {
@@ -297,10 +295,22 @@ h1 {
       position: absolute;
       background-image: url("../img/fish1.svg");
       background-size: 100%;
+      background-repeat: no-repeat;
       height: 36px;
       width: 48px;
       bottom: 5px;
       right: 5px; }
+    .slider__item:after {
+      background-image: url(../img/sprite-05259766009030953.png);
+      background-position: -204px 0px;
+      width: 42px;
+      height: 78px;
+      content: 204px, 0px, -204px, 0px, 42px, 78px, 246px, 132px, "../img/sprite-05259766009030953.png", "right-arrow";
+      width: 42px;
+      height: 78px;
+      position: absolute;
+      right: 0;
+      top: 0; }
     .slider__item:before {
       content: '1';
       font-family: "Segoe UI", sans-serif;
@@ -522,12 +532,18 @@ h1 {
 
 .maincnt {
   background-color: #F7F7F7; }
+  .maincnt__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-bottom: 5px; }
   .maincnt__inner {
-    padding: 45px 0 45px 0;
+    padding: 45px 0 40px 0;
     width: 330px;
     margin: 0 auto; }
   .maincnt__text {
-    padding: 25px 0 25px 0; }
+    padding: 15px 0 15px 0;
+    line-height: 21px; }
 
 a {
   text-decoration: none;
@@ -637,15 +653,11 @@ h2 {
   [dir="rtl"] .slick-prev{
     left: auto;
     right: 0px; }
-  [dir="rtl"] .slick-prev:before{
-    content: 54px, 136px, -54px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-07914038266932264.png", "right"; }
   .slick-next{
     right: -100px; }
   [dir="rtl"] .slick-next{
     left: -70px;
     right: auto; }
-  [dir="rtl"] .slick-next:before{
-    content: 0px, 136px, 0px, -136px, 50px, 56px, 200px, 192px, "../img/sprite-07914038266932264.png", "left"; }
   .slick-dots{
     left: -130px; }
   .slick-dots li{
@@ -705,6 +717,8 @@ h2 {
   .slide-section__inner{
     width: 1620px;
     margin-top: 147px; }
+  .slide-section__bottom{
+    margin-top: 150px; }
   .footer__inner{
     width: 917px; }
   .footer__img{
@@ -716,6 +730,14 @@ h2 {
     display: none; }
   .header-title{
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .maincnt__title{
+    font-size: 48px; }
+  .maincnt__inner{
+    width: 763px;
+    padding: 80px 0 77px 0; }
+  .maincnt__text{
+    padding: 20px 40px 20px 40px;
+    line-height: 26px; } }
 
 /*# sourceMappingURL=style.css.map */
