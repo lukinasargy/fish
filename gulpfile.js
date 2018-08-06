@@ -169,14 +169,11 @@ gulp.task('js', function () {
       // список обрабатываемых файлов
       dirs.source + '/js/jquery-3.1.0.min.js',
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
-      dirs.source + '/js/script.js',
-      dirs.source + '/js/burger.js',
       dirs.source + '/js/slider.js',
       dirs.source + '/js/slick.js',
       dirs.source + '/js/slick.min.js',
-      dirs.source + '/js/contacts.js',
-      dirs.source + '/js/price.js',
       dirs.source + '/js/scroll.js',
+      dirs.source + '/js/modal.js',
     ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('script.min.js'))

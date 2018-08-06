@@ -3,7 +3,22 @@
 			width: 327px;			
 			padding: 60px 0 75px 0;
 			margin:auto;
-			@media (min-width: $screen-xl) {width: 917px;}
+			@media (min-width: $screen-xl) {
+				padding: 217px 0px;
+				width: 917px;
+				position: relative;
+				&:before {
+					content: 'слайдер';
+					text-transform: uppercase;
+					position: absolute;
+					transform: rotate(-90deg);
+					left:-450px;
+					top:470px;
+					font-size: 48px;
+					font-weight: bold;
+					color: #DADADA;
+				}	
+			}
 		}
 	&__img {
 		width: 327px;

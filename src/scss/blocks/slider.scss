@@ -35,6 +35,10 @@
 			top:27px;
 			left: 0;
 		}
+		&:before {
+			content: '';
+			position: absolute;
+		}
 	}
 	&__text {
 		font-size: 14px;
@@ -47,6 +51,7 @@
 		}
 	}
 	&__item {
+
 		width: 242px;
 		height: 184px;
 		border-radius: 10px;
@@ -66,11 +71,13 @@
 			position: absolute;
 			background-image: url("../img/fish1.svg");
 			background-size: 100%;
+			background-repeat: no-repeat;
 			height: 36px;
 			width: 48px;
-			bottom: 15px;
-			right: 15px;
+			bottom: 5px;
+			right: 5px;
 		}
+
 		&:before {
 		content: '1';
 		font-family: $font-family-second;
@@ -81,32 +88,61 @@
 		top:-50px;
 		left:-15px;
 		font-weight: bold;
-		z-index: -1;
+		z-index: -10;
 		@media (min-width: $screen-xl) {
-			top: -80px;
+			top: -100px;
 			left:0;
-		}
+			}
 		
-	}
+		}
 
 		&--second:before {
 			content: '2';
 		}
 		&--second:after {
 			background-image: url("../img/fish2.svg");
+			height: 66px;
+			width: 66px;
 		}
 		&--third:before {
 			content: '3';
 		}
 		&--third:after {
 			background-image: url("../img/fish3.svg");
+			width: 69px;
+			height: 59px;
 		}
 		&--fourth:before {
 			content: '4';
 		}
 		&--fourth:after {
 			background-image: url("../img/fish3.svg");
+			width: 69px;
+			height: 59px;
 		}
+
+		// &--arrow:after {
+		// 	@media (min-width: $screen-xl){
+		// 	position: absolute;
+		// 		left: 0;
+		// 		top: 0;
+		// 		@include sprite($right-arrow);
+		// 		content: $right-arrow;
+		// 		width: 42px;
+		// 		height: 78px;
+		// 	}
+		// }
 	}
 	
+}
+.slider__title {
+    &:before{
+        @media (min-width: $screen-xl) {
+        	@include sprite($right-arrow);
+            content: $right-arrow;
+            background-position: -203px 0px;
+            top: 40px;
+            left: 350px;
+        }
+    }
 }

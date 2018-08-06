@@ -19,6 +19,8 @@
 	&__bottom {
 		display: flex;
 		justify-content: space-between;
+		@media (min-width:$screen-xl) {
+		margin-top: 150px;}
 	}
 	&__text {
 		font-family: $font-family-third;

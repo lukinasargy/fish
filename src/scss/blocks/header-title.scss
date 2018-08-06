@@ -2,13 +2,16 @@
 	display: none;
 	@media (min-width:$screen-xl) {
 		display: flex;
+		flex-grow: 1;
 	}
 	&__head {
+
 		width: 528px;
 		height: 119px;
 		margin-left: 62px;
 		font-size: 36px;
 		font-weight: bold;
+		text-transform: uppercase;
 	}
 	&__description {
 		width: 462px;

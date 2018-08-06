@@ -127,7 +127,7 @@ $slick-opacity-not-active: 0.25 !default;
         &:before {
             // content: $left;
             [dir="rtl"] & {
-                content: $right;
+                // content: $right;
             }
         }
     }
@@ -144,7 +144,7 @@ $slick-opacity-not-active: 0.25 !default;
     &:before {
         // content: $right-sm;
         [dir="rtl"] & {
-            content: $left-sm;
+            // content: $left-sm;
         }
     }
 
@@ -158,7 +158,7 @@ $slick-opacity-not-active: 0.25 !default;
         &:before {
             // content: $right;
             [dir="rtl"] & {
-                content: $left;
+                // content: $left;
             }
         }
     }

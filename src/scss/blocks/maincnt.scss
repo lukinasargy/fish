@@ -1,11 +1,62 @@
 .maincnt {
 	background-color: #F7F7F7;
+	&__title {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 18px;
+		padding-bottom: 5px;
+		@media (min-width:$screen-xl) {
+			font-size: 48px;
+			position: relative;
+			&:before {
+				content: 'описание';
+				text-transform: uppercase;
+				position: absolute;
+				transform: rotate(-90deg);
+				left:-546px;
+				top:390px;
+				font-size: 48px;
+				font-weight: bold;
+				color: #DADADA;
+			}		
+		}
+	}
 	&__inner {
-		padding: 45px 0 45px 0;
+		padding: 45px 0 40px 0;
 		width: 330px;
 		margin: 0 auto;
+		@media (min-width:$screen-xl) {
+			width: 763px;
+			padding: 80px 0 77px 0;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				background-image: url("../img/f1.png");
+				top: 218px;
+				left: -380px;
+				width: 342px;
+				height: 257px;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				background-image: url("../img/f2.png");
+				top: 634px;
+				right: -380px;
+				width: 306px;
+				height: 215px;
+			}
+		}
 	}
 	&__text {
-		padding: 25px 0 25px 0;
+		font-size: 14px;
+		padding: 15px 0 15px 0;
+		line-height: 21px;
+		@media (min-width:$screen-xl) {
+			padding: 20px 40px 20px 40px;
+			line-height: 26px;
+		}
+
 	}
 }
