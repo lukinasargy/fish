@@ -559,8 +559,8 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    width: 50%;
-    height: 50%;
+    width: 300px;
+    height: 80%;
     padding-top: 60px;
     padding-left: 60px;
     padding-right: 40px;
@@ -582,9 +582,10 @@ h1 {
     -ms-flex-pack: justify;
         justify-content: space-between; }
   .modal__title {
-    font-weight: bold; }
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px; }
     .modal__title:hover {
-      border-bottom: 4px solid #01E0FF;
       cursor: pointer; }
   .modal__text {
     display: block;
@@ -595,7 +596,19 @@ h1 {
     -ms-flex-pack: justify;
         justify-content: space-between; }
   .modal__fish {
-    padding-left: 100px; }
+    margin-bottom: 20px; }
+  .modal__fish:last-child {
+    border-right: 1px solid #E5E5E5; }
+
+.modal__title--hover:after {
+  background-image: url(../img/sprite-08261746005697927.png);
+  background-position: 0px -136px;
+  width: 105px;
+  height: 4px;
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0; }
 
 a {
   text-decoration: none;
@@ -756,11 +769,11 @@ h2 {
     top: -100px;
     left: 0; }
   .slider__title:before{
-    background-image: url(../img/sprite-03665601326169019.png);
+    background-image: url(../img/sprite-08261746005697927.png);
     background-position: -204px 0px;
     width: 42px;
     height: 78px;
-    content: 204px, 0px, -204px, 0px, 42px, 78px, 246px, 140px, "../img/sprite-03665601326169019.png", "right-arrow";
+    content: 204px, 0px, -204px, 0px, 42px, 78px, 246px, 140px, "../img/sprite-08261746005697927.png", "right-arrow";
     background-position: -203px 0px;
     top: 40px;
     left: 350px; }
@@ -843,7 +856,7 @@ h2 {
     padding: 20px 40px 20px 40px;
     line-height: 26px; }
   .modal__block{
-    width: 1920px;
+    width: 1640px;
     height: 960px;
     padding-left: 150px;
     padding-right: 130px; }
@@ -853,11 +866,16 @@ h2 {
     -ms-flex-direction: row;
     flex-direction: row; }
   .modal__title{
+    margin-top: 150px;
+    padding-bottom: 25px;
     font-size: 48px;
     line-height: 56px; }
   .modal__fish{
-    width: 400px;
+    padding-left: 100px;
+    width: 300px;
     height: 733px;
-    border-left: 1px solid #E5E5E5; } }
+    border-left: 1px solid #E5E5E5; }
+  .modal__title--hover:after{
+    top: 55px; } }
 
 /*# sourceMappingURL=style.css.map */
