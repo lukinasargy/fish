@@ -13,14 +13,14 @@
 		left: 50%;
 		transform: translate(-50%,-50%);
 		background-color: #fff;
-		width: 50%;
-		height: 50%;
+		width: 300px;
+		height: 80%;
 		padding-top: 60px;
 		padding-left: 60px;
 		padding-right: 40px;
 		z-index: 5;
 		@media (min-width:$screen-xl) {
-			width: 1920px;
+			width: 1640px;
 			height: 960px;
 			padding-left: 150px;
 			padding-right: 130px;
@@ -48,11 +48,14 @@
 	}
 	&__title {
 		font-weight: bold;
-		&:hover {
-			border-bottom: 4px solid #01E0FF;
+		position: relative;
+		padding-bottom: 10px;
+		&:hover {	
 			cursor:pointer;
 		}
 		@media (min-width:$screen-xl) {
+			margin-top: 150px;
+			padding-bottom: 25px;
 			font-size: 48px;
 			line-height: 56px;
 		}
@@ -67,18 +70,25 @@
 		@media (min-width:$screen-xl) {}
 	}
 	&__fish {
-		// text-align: center;
-		padding-left: 100px;
+		margin-bottom: 20px;
 		@media (min-width:$screen-xl) {
-
-			width: 400px;
+			padding-left: 100px;
+			width: 300px;
 			height: 733px;
 			border-left: 1px solid #E5E5E5;
-			// position: relative;
-			// &:before {
-			// 	content: '';
-			// 	position: absolute;
-			// }
 		}
 	}
+	&__fish:last-child {
+		border-right: 1px solid #E5E5E5;
+	}
 }
+.modal__title--hover:after {
+		@include sprite($rectangle);
+		content: '';
+		position: absolute;
+		top: 30px;
+		left: 0;
+		@media (min-width:$screen-xl) {
+			top: 55px;
+		}
+	}
